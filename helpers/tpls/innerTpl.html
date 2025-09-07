@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>{PageTitle}</title>
+        <meta name="description" content="{MetaDesc}" />
+        <meta name="keywords" content="{MetaKeys}" />
+        <!-- for-mobile-apps -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="robots" content="index, follow">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="{FaviconPath}ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <script>
+            addEventListener("load", function () {
+                setTimeout(hideURLbar, 0);
+            }, false);
+
+            function hideURLbar() {
+                window.scrollTo(0, 1);
+            }
+        </script>
+        <link rel="apple-touch-icon" sizes="57x57" href="{FaviconPath}apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="{FaviconPath}apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="{FaviconPath}apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="{FaviconPath}apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="{FaviconPath}apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="{FaviconPath}apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="{FaviconPath}apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="{FaviconPath}apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="{FaviconPath}apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="{FaviconPath}android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="{FaviconPath}favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="{FaviconPath}favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="{FaviconPath}favicon-16x16.png">
+        <link rel="manifest" href="{FaviconPath}manifest.json">
+        <!--//web-fonts-->
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <link rel="stylesheet" href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+        {CSSHelpers}
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+        <!-- online-fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <!-- //online-fonts -->
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/respond.<![endif]-->
+    </head>
+    <body data-absurl="{AbsUrl}">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="{AbsUrl}">
+                    <img src="{ImgPath}logo1.png" class="img-fluid" alt="Miniach Solution" width="100">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-white"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link {HomeActive}" href="{AbsUrl}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link {AboutActive}" href="{AbsUrl}about-us/">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#software">Software</a></li>
+                        <li class="nav-item"><a class="nav-link {cntActive}" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav aria-label="breadcrumb" class="bg-light py-2 mb-0 shadow-sm">
+            <div class="container">
+                <ol id="breadcrumb" class="breadcrumb mb-0"></ol>
+            </div>
+        </nav>
+        {Contents}
+        <!-- Footer -->
+        <footer id="contact" class="py-4">
+            <div class="container text-center">
+                <p>&copy; {CurYr} Miniach Solution. All Rights Reserved.</p>
+                <p>Visitors Count: {VisitCount}</p>
+                <p>Email: info@miniach.com | Phone: +91 9876543210</p>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+        <script src="//cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+        {JSHelpers}
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1000
+            });
+
+            document.addEventListener("DOMContentLoaded", function () {
+                const breadcrumbContainer = document.getElementById("breadcrumb");
+
+                let path = window.location.pathname.replace(/^\/|\/$/g, '');
+
+                let breadcrumbHTML = `<li class="breadcrumb-item"><a href="/">Home</a></li>`;
+
+                if (path && path !== 'index.php') {
+                    const parts = path.split('/');
+
+                    parts.forEach((part, index) => {
+                        const name = part.replace(/\.[^/.]+$/, '').replace(/-/g, ' ');
+                        const linkPath = '/' + parts.slice(0, index + 1).join('/');
+
+                        if (index === parts.length - 1) {
+                            breadcrumbHTML += `<li class="breadcrumb-item active" aria-current="page">${name.charAt(0).toUpperCase() + name.slice(1)}</li>`;
+                        } else {
+                            breadcrumbHTML += `<li class="breadcrumb-item"><a href="${linkPath}">${name.charAt(0).toUpperCase() + name.slice(1)}</a></li>`;
+                        }
+                    });
+                }
+
+                breadcrumbContainer.innerHTML = breadcrumbHTML;
+            });
+        </script>
+    </body>
+</html>

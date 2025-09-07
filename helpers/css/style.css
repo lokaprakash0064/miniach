@@ -1,0 +1,205 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+/* Navbar Gradient */
+/* Navbar Gradient */
+.navbar-custom {
+    background: linear-gradient(90deg, #00bcd4, #1976d2);
+}
+
+/* Navbar links */
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand {
+    color: white !important;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for links */
+.navbar-custom .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 0%;
+    height: 2px;
+    background: #ffeb3b; /* Golden underline for contrast */
+    transition: width 0.3s ease;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #ffeb3b !important; /* Gold on hover */
+}
+
+.navbar-custom .nav-link:hover::after {
+    width: 100%;
+}
+
+/* Active link style */
+.navbar-custom .nav-link.active {
+    background: rgba(255, 255, 255, 0.2); /* Slight highlight background */
+    border-radius: 5px;
+    color: #fff !important;
+    font-weight: 600;
+}
+
+/* Footer Gradient */
+footer {
+    background: linear-gradient(90deg, #1976d2, #004ba0); /* Darker complementary */
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+}
+.hero .content {
+    position: relative;
+    z-index: 1;
+}
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Cards */
+.tool-card {
+    background: #ffffff;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.tool-card .tool-icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #00bcd4; /* Brand cyan */
+}
+
+.tool-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(25, 118, 210, 0.25);
+    background: linear-gradient(135deg, #e0f7fa, #e3f2fd);
+}
+
+.tool-card:hover .tool-icon {
+    color: #1976d2; /* Brand blue */
+}
+
+.tool-card h5 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.tool-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Section background */
+.bg-pattern {
+    background: linear-gradient(135deg, rgba(0,188,212,0.05), rgba(25,118,210,0.05));
+}
+
+.section-title {
+    font-weight: 700;
+    color: #1976d2;
+    margin-bottom: 20px;
+}
+.goals-list li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+}
+.goals-list li::before {
+    content: "✔";
+    color: #00bcd4;
+    position: absolute;
+    left: 0;
+}
+.goals-list li::marker {
+    content: "";
+}
+.services-card {
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+.glass-card {
+    border-radius: 12px;
+    padding: 1.25rem;
+    background: rgba(255,255,255,0.9);
+    box-shadow: 0 10px 30px rgba(15,23,42,0.06);
+    border: 1px solid rgba(0,0,0,0.04);
+}
+.accent-strip {
+    height:6px;
+    width:120px;
+    border-radius:999px;
+    background:linear-gradient(90deg,#00bcd4,#1976d2);
+    margin-bottom:12px;
+}
+.lead-hero {
+    font-size:1.02rem;
+    line-height:1.6;
+    color:#0b1220;
+}
+.who-grid {
+    display:grid;
+    grid-template-columns:1fr 360px;
+    gap:1.5rem;
+    align-items:center;
+}
+@media (max-width:991px){
+    .who-grid{
+        grid-template-columns:1fr;
+    }
+}
+.goal-dot {
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:#00bcd4;
+    margin-right:12px;
+    flex:0 0 10px;
+}
+.quick-facts li {
+    margin-bottom:6px;
+}
+.services-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(25,118,210,0.25);
+}
+.breadcrumb {
+    background: transparent;
+}
+.breadcrumb a {
+    color: #1976d2;
+    text-decoration: none;
+}
+.breadcrumb a:hover {
+    text-decoration: underline;
+    color: #00bcd4;
+}
+.breadcrumb-item.active {
+    color: #555;
+    font-weight: 500;
+}
+
