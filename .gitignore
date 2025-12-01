@@ -1,0 +1,8 @@
+
+*.txt
+*.txt
+helpers/classes/mpdf/.github/CONTRIBUTING.md
+helpers/classes/mpdf/
+helpers/classes/phpspreadsheet/
+*.zip
+nbproject/

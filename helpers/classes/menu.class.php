@@ -225,6 +225,18 @@ if (!class_exists('Menu')) {
                     ];
                     PageCache::getObject()->createCache(ACCESS_URL . 'home', $replaceData, 'innerTpl.html');
                     break;
+                case 'courses':
+                    $replaceData = [
+                        'PageTitle' => 'Courses | Miniach Solution',
+                        'CoursesActive' => 'active',
+                        'MetaDesc' => '',
+                        'MetaKeys' => '',
+                        'CSSHelpers' => ['style.css'],
+                        'JSHelpers' => ['custom.js'],
+                        'Contents' => file_get_contents(PGS_DIR . DS . 'courses.html')
+                    ];
+                    PageCache::getObject()->createCache(ACCESS_URL . 'courses', $replaceData, 'innerTpl.html');
+                    break;
                 default:
                     $replaceData = [
                         'PageTitle' => 'Home | Miniach Solution',
